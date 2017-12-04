@@ -3,5 +3,45 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout1">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayoutH_TitleBar"
+            android:gravity="top">
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageViewLogo"
+                android:layout_margin="3dip"
+                android:tag="Placeholder" />
+            <TextView
+                android:text="Harmony"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewMainTitle"
+                android:layout_margin="3dip"
+                android:tag="Placeholder" />
+        </LinearLayout>
+        <GridLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/gridLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="Button"
+                android:id="@+id/button1" />
+        </GridLayout>
+    </RelativeLayout>
 </LinearLayout>
