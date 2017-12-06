@@ -54,6 +54,7 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventCalendarActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="ResonateActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

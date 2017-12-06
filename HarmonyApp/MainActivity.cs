@@ -12,6 +12,7 @@ namespace HarmonyApp
     public class MainActivity : Activity
     {
         private Button btnLaunchResonate;
+        private Button btnLaunchEventCalendar;
         public Typeface ParagraphFont;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -28,6 +29,8 @@ namespace HarmonyApp
             
             btnLaunchResonate = FindViewById<Button>(Resource.Id.buttonLaunchResonate);
             btnLaunchResonate.Click += BtnLaunchResonate_Click;
+            btnLaunchEventCalendar = FindViewById<Button>(Resource.Id.buttonLaunchEventCalendar);
+            btnLaunchEventCalendar.Click += BtnLaunchEventCalendar_Click;
             //ParagraphFont = Typeface.CreateFromAsset(Assets, "fonts/paragraph.ttf");//missing the file currently
         }
 
@@ -41,6 +44,19 @@ namespace HarmonyApp
             Intent startResonate = new Intent(this, typeof(ResonateActivity));
             StartActivity(startResonate);
             Log.Info("HarmonyApp", "Beginning Resonate Activity");
+            //potentially launch Resonate service here
+        }
+
+        private void BtnLaunchEventCalendar_Click(object sender, EventArgs e)
+        {
+            StartCalendar();
+        }
+
+        public void StartCalendar()
+        {
+            Intent startCalendar = new Intent(this, typeof(EventCalendarActivity));
+            StartActivity(startCalendar);
+            Log.Info("HarmonyApp", "Beginning Event Calendar Activity");
             //potentially launch Resonate service here
         }
     }
