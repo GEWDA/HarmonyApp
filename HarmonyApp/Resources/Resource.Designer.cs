@@ -41,29 +41,60 @@ namespace HarmonyApp
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int theme_custom_background = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public const int theme_devicedefault_background = 2130968577;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040006
-			public const int button1 = 2130968582;
+			// aapt resource value: 0x7f060009
+			public const int buttonLaunchEventCalendar = 2131099657;
 			
-			// aapt resource value: 0x7f040005
-			public const int gridLayout1 = 2130968581;
+			// aapt resource value: 0x7f060008
+			public const int buttonLaunchResonate = 2131099656;
 			
-			// aapt resource value: 0x7f040003
-			public const int imageViewLogo = 2130968579;
+			// aapt resource value: 0x7f060001
+			public const int calendarView1 = 2131099649;
 			
-			// aapt resource value: 0x7f040002
-			public const int linearLayoutH_TitleBar = 2130968578;
+			// aapt resource value: 0x7f060007
+			public const int gridLayout1 = 2131099655;
 			
-			// aapt resource value: 0x7f040001
-			public const int linearLayoutV1 = 2130968577;
+			// aapt resource value: 0x7f060005
+			public const int imageViewLogo = 2131099653;
 			
-			// aapt resource value: 0x7f040000
-			public const int relativeLayout1 = 2130968576;
+			// aapt resource value: 0x7f060004
+			public const int linearLayoutH_TitleBar = 2131099652;
 			
-			// aapt resource value: 0x7f040004
-			public const int textViewMainTitle = 2130968580;
+			// aapt resource value: 0x7f060003
+			public const int linearLayoutV1 = 2131099651;
+			
+			// aapt resource value: 0x7f060002
+			public const int relativeLayout1 = 2131099650;
+			
+			// aapt resource value: 0x7f06000a
+			public const int spinnerResonateSermonSelect = 2131099658;
+			
+			// aapt resource value: 0x7f060000
+			public const int textViewEventCalendar = 2131099648;
+			
+			// aapt resource value: 0x7f060006
+			public const int textViewMainTitle = 2131099654;
 			
 			static Id()
 			{
@@ -79,7 +110,13 @@ namespace HarmonyApp
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Main = 2130837504;
+			public const int EventCalendar = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int Main = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int Resonate = 2130837506;
 			
 			static Layout()
 			{
@@ -103,6 +140,22 @@ namespace HarmonyApp
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int Theme_Custom = 2131034112;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}
